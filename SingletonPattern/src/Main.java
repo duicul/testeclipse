@@ -10,6 +10,9 @@ private static World w;
         System.out.println(w);
         w=World.createWorld(12);
         System.out.println(w);
+        World.eraseWorld();
+        w=World.createWorld(20);
+        System.out.println(w);
 	}
 
 }

@@ -1,7 +1,7 @@
 
 public class World {
   private int size;
-  static World w=null;
+  private static World w=null;
 	private World(int size) {
 		this.size=size;
 		// TODO Auto-generated constructor stub
@@ -11,6 +11,9 @@ public class World {
 	  w=new World(size);
   return w;
   }
+  
+  static public void eraseWorld()
+  {w=null;}
   
   public String toString()
   { return "World size: "+size;}
