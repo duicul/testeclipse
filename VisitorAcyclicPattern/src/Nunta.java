@@ -7,16 +7,11 @@ public class Nunta extends Eveniment {
 	}
 	
 	public String toString()
-	{return "Nunta ";}
+	{return "Nunta "+super.toString()+" ";}
 	
 	public String formatie(Muzica m)
-	{String aux=""; 
-	if(m instanceof Blues)
-		aux+=((Blues) m).cantaBlues(this);
-	if(m instanceof Rock)
-		aux+="\n"+((Rock) m).cantaRock(this);
-	if(m instanceof Manele)
-		aux+="\n"+((Manele) m).cantaManele(this);
-   return aux;
+	{if(m instanceof MuzicaNunta)
+		return ((MuzicaNunta) m).canta(this);
+    return  "";
 	}
 }

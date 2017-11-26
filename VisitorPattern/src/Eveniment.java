@@ -8,7 +8,6 @@ protected int len;
 	public String toString()
 	{return "";}
 	
-   public String formatie(Muzica m)
-   {return m.canta(this);	   
-   }
+   public abstract String formatie(Muzica m);	   
+   
 }

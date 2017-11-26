@@ -6,7 +6,7 @@ protected int len;
 		// TODO Auto-generated constructor stub
 	}
 	public String toString()
-	{return "";}
+	{return "durata : "+len;}
 	
 	public abstract String formatie(Muzica m);
 }

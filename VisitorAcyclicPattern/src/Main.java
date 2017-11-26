@@ -10,7 +10,8 @@ public class Main {
         e[0]=new Botez(12);
         e[1]=new Nunta(13);
         for(int i=0;i<e.length;i++)
-        {System.out.println(e[i].formatie(new MuzicaLocal(123)));
+        {System.out.println(e[i].formatie(new MuzicaLocal(120+i*4)));
+        System.out.println(e[i].formatie(new MuzicaNuntaLocal(120+i*4)));
         }
 	}
 

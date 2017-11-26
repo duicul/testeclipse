@@ -9,7 +9,7 @@ public class Botez extends Eveniment {
 	public String toString()
 	{return "Botez ";}
 	
-	public String canta(Muzica m)
+	public String formatie(Muzica m)
 	{return m.canta(this); 
 	}
 }

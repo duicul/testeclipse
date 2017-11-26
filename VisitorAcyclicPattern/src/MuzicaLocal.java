@@ -1,5 +1,5 @@
 
-public class MuzicaLocal extends Muzica implements Blues, Rock, Manele {
+public class MuzicaLocal extends Muzica implements MuzicaBotez,MuzicaNunta{
 
 	public MuzicaLocal(int price) {
 		super(price);
@@ -7,18 +7,14 @@ public class MuzicaLocal extends Muzica implements Blues, Rock, Manele {
 	}
 
 	@Override
-	public String cantaManele(Eveniment e) {
-		return e+"canta Manele";
+	public String canta(Nunta n) {
+		return n+" canta Rock Manele Blues pentru " + price +" lei";
 	}
 
 	@Override
-	public String cantaRock(Eveniment e) {
-		return e+"canta Rock";
+	public String canta(Botez b) {
+		return b+" canta Blues Rock pentru "+price+" lei";
 	}
 
-	@Override
-	public String cantaBlues(Eveniment e) {
-		return e+"canta Blues";
-	}
 
 }

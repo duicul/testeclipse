@@ -7,13 +7,11 @@ public class Botez extends Eveniment {
 	}
 	
 	public String toString()
-	{return "Botez ";}
+	{return "Botez "+super.toString()+" ";}
 	
 	public String formatie(Muzica m)
-	{ String aux="";
-		if(m instanceof Blues)
-		aux+=((Blues) m).cantaBlues(this);
-	if(m instanceof Manele)
-		aux+="\n"+((Manele) m).cantaManele(this);
-	return aux;}
+	{if(m instanceof MuzicaBotez)
+		return ((MuzicaBotez)m).canta(this);
+	return "";
+	}
 }
